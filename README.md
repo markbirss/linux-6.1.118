@@ -59,3 +59,13 @@ make: *** [Makefile:1651: bindeb-pkg] Error 2
 
 
 ```
+
+notes
+```
+built kernel source is required under /lib/modules/6.1.118/build
+
+ls -lah /lib/modules/6.1.118
+lrwxr-xr-x 1 root root   24 Mar 30 19:14 build -> /home/lyra/linux-6.1.118
+
+mkdir -p /lib/modules/6.1.118/build
+```
