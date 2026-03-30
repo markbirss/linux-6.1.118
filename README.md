@@ -15,8 +15,8 @@ make -j$(nproc);
 make -j$(nproc) Image; \
 make -j$(nproc) modules_prepare; \
 make -j$(nproc) modules; \
-sudo make -j$(nproc) modules_install; \
-sudo depmod -a; \
+#sudo make -j$(nproc) modules_install; \
+#sudo depmod -a; \
 sudo make -j$(nproc) INSTALL_HDR_PATH=/usr/src/linux-headers-6.1.118 headers_install; \
 sudo nice make -j$(nproc) bindeb-pkg
 ```
