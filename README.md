@@ -19,6 +19,13 @@ sudo make -j$(nproc) modules_install; \
 sudo depmod -a; \
 sudo make -j$(nproc) INSTALL_HDR_PATH=/usr/src/linux-headers-6.1.118 headers_install; \
 sudo nice make -j$(nproc) bindeb-pkg
+
+
+# d2832a10c5605faecb1cb55c57cc5ba4c6ed2da8dac162446040e2c470dfd8af  linux-6.1.118.tar.gz
+
+# extract linux-6.1.118.tar.gz (677MB)
+7z x linux-6.1.118.7z.001
+sha256sum linux-6.1.118.tar.gz
 ```
 
 error
