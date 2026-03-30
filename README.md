@@ -10,13 +10,13 @@ cd linux-6.1.118
 mv .git dot_git
 make rk3506_defconfig; \
 #make menuconfig
-make -j4;
-#make -j4 Image modules modules_install;
-make -j4 Image; \
-make -j4 modules_prepare; \
-make -j4 modules; \
-sudo make -j4 modules_install; \
+make -j$(nproc);
+#make -j$(nproc) Image modules modules_install;
+make -j$(nproc) Image; \
+make -j$(nproc) modules_prepare; \
+make -j$(nproc) modules; \
+sudo make -j$(nproc) modules_install; \
 sudo depmod -a; \
-sudo make -j4 INSTALL_HDR_PATH=/usr/src/linux-headers-6.1.118 headers_install; \
+sudo make -j$(nproc) INSTALL_HDR_PATH=/usr/src/linux-headers-6.1.118 headers_install; \
 sudo nice make -j$(nproc) bindeb-pkg
 ```
