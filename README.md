@@ -1,7 +1,7 @@
 # linux-6.1.118
 
 ```
-Install linux-headers-6.1.118 only if you require to compile kernel modules
+Simply install linux-headers-6.1.118 only if you require to compile kernel modules (you only need the kernel source if you require to compile modules contained in the kernel)
 
 https://github.com/markbirss/linux-6.1.118/releases/tag/1
 
