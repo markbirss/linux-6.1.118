@@ -6,6 +6,13 @@ Install linux-headers-6.1.118 only if you require to compile kernel modules
 https://github.com/markbirss/linux-6.1.118/releases/tag/1
 
 sudo dpkg -i linux-headers-6.1.118_6.1.118-17_armhf.deb
+
+ls -lah /lib/modules/6.1.118
+total 592K
+drwxrwxr-x 3 root root 4.0K Mar 31 04:37 .
+drwxrwxrwx 4 root root 4.0K Mar 29 03:44 ..
+lrwxr-xr-x 1 root root   30 Mar 31 03:11 build -> /usr/src/linux-headers-6.1.118
+
 ```
 
 
