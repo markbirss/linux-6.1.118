@@ -1,6 +1,15 @@
 # linux-6.1.118
 
 ```
+Install linux-headers-6.1.118 only if you require to compile kernel modules
+
+https://github.com/markbirss/linux-6.1.118/releases/tag/1
+
+sudo dpkg -i linux-headers-6.1.118_6.1.118-17_armhf.deb
+```
+
+
+```
 sudo apt -y update; sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc rsync dwarves lz4 git;
 sudo apt -y install cpio build-essential libncurses5-dev fakeroot wget bzip2 git dpkg-dev devscripts
 /usr/src/linux-6.1.118
